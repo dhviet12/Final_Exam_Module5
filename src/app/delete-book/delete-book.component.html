@@ -1,0 +1,29 @@
+
+<h2>Delete Book</h2>
+<br>
+
+<br>
+<br>
+
+<dl class="row">
+  <dt class="col-sm-2">Book's name:</dt>
+  <dd class="col-sm-10">{{book.title}}</dd>
+
+  <dt class="col-sm-2">Book's author:</dt>
+  <dd class="col-sm-10">
+    {{book.author}}
+  </dd>
+
+  <dt class="col-sm-2">Book's description:</dt>
+  <dd class="col-sm-10">{{book.description}}</dd>
+</dl>
+<div style="float: left; width: 100px">
+  <button type="button" class="btn btn-danger" (click)="deleteBook()" >Delete</button>
+</div>
+<div style="float: left; width: 150px">
+  <button type="button" class="btn btn-primary" [routerLink]="''">Back to List</button>
+</div>
+
+
+
+

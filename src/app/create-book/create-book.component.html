@@ -1,0 +1,36 @@
+<h2>Create Book</h2>
+
+<div class="container">
+  <form (ngSubmit)="createBook()">
+    <div class="form-group">
+      <label for="nameB"> Book's name: </label>
+      <input class="form-control" type="text" [(ngModel)]="book.title" name="name" id="nameB">
+      <br>
+    </div>
+    <div class="form-group">
+      <label for="authorB"> Book's name: </label>
+      <input class="form-control" type="text" [(ngModel)]="book.author" name="author" id="authorB">
+      <br>
+    </div>
+    <div class="form-group">
+      <label for="descriptionB"> Book's description: </label>
+      <textarea class="form-control" [(ngModel)]="book.description" name="description" id="descriptionB">
+      </textarea>
+      <br>
+    </div>
+    <div style="float: left; width: 100px">
+      <input class="btn btn-warning" type="submit" value="Create">
+    </div>
+    <div style="float: left; width: 150px">
+      <button class="btn btn-primary" type="button" [routerLink]="'/'"> Back to List</button>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+
